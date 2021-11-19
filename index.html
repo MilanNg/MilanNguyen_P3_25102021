@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css" />
         <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/872c972537.js" 
         crossorigin="anonymous"></script>
@@ -11,41 +12,47 @@
     </head>
 
     <body>
-        <header>
+        <header class="container">
             <img src="img/ohmyfood@2x.svg" alt="logo ohmyfood"/>
         </header>
 
         <main>
-            <section>
+            <section class="container citylocation">
                 <i class="fas fa-map-marker-alt"></i>
-                <p>Paris, Belleville</p>
+                <p class="bold">Paris, Belleville</p>
             </section>
-            <section>
+            <section class="container container2">
                 <h1>Réservez le menu qui vous convient</h1>
                 <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-                <a href="#">Explorez nos restaurants</a>
+                <a class="explore" href="#">Explorez nos restaurants</a>
             </section>
-            <nav>
+            <nav class="container">
                 <h2>Fonctionnement</h2>
                 <ul>
                     <li>
-                        <h3>1</h3>
-                        <i class="fas fa-mobile-alt"></i>
-                        <h3>Choisissez un restaurant</h3>
+                        <h3 class="hcolor">1</h3>
+                        <div class="flexnav">
+                            <i class="imports1 fas fa-mobile-alt"></i>
+                            <h3 class="align">Choisissez un restaurant</h3>
+                        </div>
                     </li>
                     <li>
-                        <h3>2</h3>
-                        <i class="fas fa-list-ul"></i>
-                        <h3>Composez votre menu</h3>
+                        <h3 class="hcolor">2</h3>
+                        <div class="flexnav">
+                            <i class="imports2 fas fa-list-ul"></i>
+                            <h3 class="align">Composez votre menu</h3>
+                        </div>
                     </li>
                     <li>
-                        <h3>3</h3>
-                        <i class="fas fa-store"></i>
-                        <h3>Dégustez au restaurant</h3>
+                        <h3 class="hcolor">3</h3>
+                        <div class="flexnav">
+                            <i class="imports3 fas fa-store"></i>
+                            <h3 class="align">Dégustez au restaurant</h3>
+                        </div>
                     </li>
                 </ul>
             </nav>
-            <section>
+            <section class="container">
                 <h2>Restaurants</h2>
                 <div>
                     <a href="LaPaletteDuGout.html">
