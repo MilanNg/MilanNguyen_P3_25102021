@@ -131,3 +131,80 @@ li
     display: flex;
     align-items: center;
 }
+.container3
+{
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgb(246, 246, 246);
+}
+.cards
+{
+    display: grid;
+    grid-template-columns: repeat(100px 100px);
+    column-gap: 30px;
+    row-gap: 30px;
+    padding-bottom: 30px;
+}
+.cardimg
+{
+    max-width: 100%;
+    border-radius: 20px;
+    background-color: white;
+}
+.cardimg:visited
+{
+    color: black;
+}
+.cardimg img
+{
+    height: 100px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+.contentcard
+{
+    padding: 20px;
+    margin: 0px;
+}
+.hcolor2
+{
+    margin: 0;
+}
+footer
+{
+    padding: 20px;
+    background-color: rgb(53, 53, 53);
+}
+.footerpolice
+{
+    font-family: shrikhand;
+    margin: 0;
+    margin-bottom: 12px;
+    color: white;
+    font-weight: normal;
+}
+.flexfoot1
+{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: white;
+}
+.flexfoot2
+{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+}
+.flexfoot3
+{
+    color: white;
+}
+h4
+{
+    font-weight: normal;
+    margin: 5px;
+}
