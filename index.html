@@ -12,22 +12,22 @@
     </head>
 
     <body>
-        <header class="container">
+        <header class="container logo">
             <img src="img/ohmyfood@2x.svg" alt="logo ohmyfood"/>
         </header>
 
         <main>
-            <section class="container citylocation">
+            <form class="container citylocation">
                 <i class="fas fa-map-marker-alt"></i>
                 <p class="bold">Paris, Belleville</p>
-            </section>
+            </form>
             <section class="container container2">
-                <h1>Réservez le menu qui vous convient</h1>
-                <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+                <h1 class="textpadding">Réservez le menu qui vous convient</h1>
+                <p class="textpadding2">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
                 <a class="explore" href="#">Explorez nos restaurants</a>
             </section>
             <nav class="container">
-                <h2>Fonctionnement</h2>
+                <h2 class="textpadding3">Fonctionnement</h2>
                 <ul>
                     <li>
                         <h3 class="hcolor">1</h3>
@@ -55,54 +55,64 @@
             <section class="container container3">
                 <h2>Restaurants</h2>
                     <div class="cards">
-                        <a class="cardimg" href="LaPaletteDuGout.html">
-                            <img src="img/palette.jpg" alt="photo plat palette"/>
-                            <div class="contentcard">
-                                <div>
-                                    <h3 class="hcolor2">La palette du goùt</h3>
-                                    <p>Ménilmontant</p>
-                                </div>
-                                <div>
+                        <figure>
+                            <a class="cardimg" href="LaPaletteDuGout.html">
+                                <img src="img/palette.jpg" alt="photo plat palette"/>
+                                <span class="badgenew">Nouveau</span>
+                                <figcaption class="contentcard">
+                                    <div>
+                                        <h3 class="hcolor2">La palette du goùt</h3>
+                                        <p class="cardtext">Ménilmontant</p>
+                                    </div>                                
+                                </figcaption>
+                            </a>
+                            <div class="heart">
+                                <i class="far fa-heart"></i>
+                            </div>
+                        </figure>
+                        <figure>
+                            <a class="cardimg" href="LaNoteEnchantee.html">
+                                <img src="img/note.jpg" alt="photo plat note"/>
+                                <span class="badgenew">Nouveau</span>
+                                <figcaption class="contentcard">
+                                    <div>
+                                        <h3 class="hcolor2">La note enchantée</h3>
+                                        <p class="cardtext">Charonne</p>
+                                    </div>
+                                </figcaption>
+                                <div class="heart">
                                     <i class="far fa-heart"></i>
                                 </div>
-                            </div>
-                        </a>
-                        <a class="cardimg" href="LaNoteEnchantee.html">
-                            <img src="img/note.jpg" alt="photo plat note"/>
-                            <div class="contentcard">
-                                <div>
-                                    <h3 class="hcolor2">La note enchantée</h3>
-                                    <p>Charonne</p>
-                                </div>
-                                <div>
+                            </a>
+                        </figure>
+                        <figure>
+                            <a class="cardimg" href="ALaFrancaise.html">
+                                <img src="img/francaise.jpg" alt="photo plat francaise"/>
+                                <figcaption class="contentcard">
+                                    <div>
+                                        <h3 class="hcolor2">À la française</h3>
+                                        <p class="cardtext">Cité Rouge</p>
+                                    </div>
+                                </figcaption>
+                                <div class="heart">
                                     <i class="far fa-heart"></i>
                                 </div>
-                            </div>
-                        </a>
-                        <a class="cardimg" href="ALaFrancaise.html">
-                            <img src="img/francaise.jpg" alt="photo plat francaise"/>
-                            <div class="contentcard">
-                                <div>
-                                    <h3 class="hcolor2">À la française</h3>
-                                    <p>Cité Rouge</p>
-                                </div>
-                                <div>
+                            </a>
+                        </figure>
+                        <figure>
+                            <a class="cardimg" href="DeliceDesSens.html">
+                                <img src="img/delice.jpg" alt="photo plat delice"/>
+                                <figcaption class="contentcard">
+                                    <div>
+                                        <h3 class="hcolor2">Le délice des sens</h3>
+                                        <p class="cardtext">Folie-Méricourt</p>
+                                    </div>
+                                </figcaption>
+                                <div class="heart">
                                     <i class="far fa-heart"></i>
                                 </div>
-                            </div>
-                        </a>
-                        <a class="cardimg" href="DeliceDesSens.html">
-                            <img src="img/delice.jpg" alt="photo plat delice"/>
-                            <div class="contentcard">
-                                <div>
-                                    <h3 class="hcolor2">Le délice des sens</h3>
-                                    <p>Folie-Méricourt</p>
-                                </div>
-                                <div>
-                                    <i class="far fa-heart"></i>
-                                </div>
-                            </div>
-                        </a>
+                            </a>
+                        </figure>
                     </div>
             </section>
         </main>
