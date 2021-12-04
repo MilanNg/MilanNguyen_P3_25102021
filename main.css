@@ -89,17 +89,12 @@ h3
     position: relative;
 }
 .bordertitle
-{
-    content: "";
+{  
     background-color: rgb(153, 226, 208);
     width: 50px;
     height: 4px;
     position: absolute;
     top: 30px;
-}
-.gridmenu
-{
-    display: grid;
 }
 .card
 {
@@ -112,6 +107,10 @@ h3
     box-shadow: 0px 5px 10px rgb(207, 207, 207);
     margin-bottom: 20px;
 }
+.textmenu
+{
+    max-width: 80%;
+}
 h4
 {
     margin: 0;
@@ -120,9 +119,18 @@ h4
 {
     align-self: flex-end;
 }
+.margintitle
+{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 .margincard
 {
     margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .logovalid
 {
@@ -189,11 +197,16 @@ h5
     margin: 5px;
     font-size: 16px;
 }
-@media (min-width: 1024px)
+@media (min-width: 768px)
 {
     .gridmenu
     {
+        display: grid;
         grid-template-columns: repeat(3,1fr);
         column-gap: 20px;
+    }
+    .widthmenu
+    {
+        min-width: 100%;
     }
 }
