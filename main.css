@@ -77,8 +77,22 @@ section
 }
 .heart
 {
-    align-self: center;
-    font-size: 25px;
+    position: absolute;
+    top: 30px;
+    right: 35px;
+    font-size: 28px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 3px;
+}
+.heart:hover
+{
+    font-size: 31px;
+    top: 28px;
+    right: 33px;
+    background: -webkit-linear-gradient(90deg,rgba(147,86,220,.9),rgba(255,121,218,.9));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-stroke-width: 0px;
 }
 h3
 {
@@ -87,6 +101,7 @@ h3
 .titlepos
 {
     position: relative;
+    margin-bottom: 30px;
 }
 .bordertitle
 {  
@@ -98,18 +113,51 @@ h3
 }
 .card
 {
-    display: flex;
     background-color: white;
     border-radius: 15px;
     padding: 20px;
     display: flex;
-    justify-content: space-between;
     box-shadow: 0px 5px 10px rgb(207, 207, 207);
     margin-bottom: 20px;
+    cursor: pointer;
+    animation: cardpop .5s;
+    animation-fill-mode: backwards;
+    overflow: hidden;
+
+}
+@keyframes cardpop
+{
+    0%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+}
+.delay1
+{
+    animation-delay: .2s;
+}
+.delay2
+{
+    animation-delay: .4s;
+}
+.delay3
+{
+    animation-delay: .6s;
+}
+.delay4
+{
+    animation-delay: .8s;
 }
 .textmenu
 {
-    max-width: 80%;
+    max-width: 95%;
+    padding-right: 0px;
+    flex: 1;
+
 }
 h4
 {
@@ -117,7 +165,11 @@ h4
 }
 .price
 {
-    align-self: flex-end;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-left: 10px;
+    margin-right: 32px;
 }
 .margintitle
 {
@@ -132,10 +184,36 @@ h4
     overflow: hidden;
     text-overflow: ellipsis;
 }
+.boxlogovalid
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(153, 226, 208);
+    width: 70px;
+    height: 80px;
+    margin: -20px -90px -20px -20px;
+    transition-duration: .5s;
+}
+.card:hover .boxlogovalid
+{
+    margin-right: -20px;
+}
 .logovalid
 {
-    display: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 25px;
+    transform: rotate(180deg);
+    transition-duration: .5s;
 }
+.card:hover .logovalid
+{
+    transform: rotate(0);
+}
+
 .btn
 {
     font-size: 16px;
@@ -148,7 +226,7 @@ h4
     border-radius: 50px;
     background-image: linear-gradient(0deg,rgba(147,86,220,.9),rgba(255,121,218,.9));
     box-shadow: 0px 5px 10px rgb(190, 190, 190);
-    transition-duration: .40s;
+    transition-duration: .4s;
 }
 .btn:hover
 {
@@ -197,7 +275,7 @@ h5
     margin: 5px;
     font-size: 16px;
 }
-@media (min-width: 768px)
+@media (min-width: 992px)
 {
     .gridmenu
     {
